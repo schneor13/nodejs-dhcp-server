@@ -7,6 +7,7 @@
     "test": "npm test",
     "start-server": "node app/server.js --harmony",
     "start-client": "node app/client.js --harmony",
+    "start-monitor": "node app/monitor.js --harmony",
     "start": "npm run start-server"
   },
   "repository": {
