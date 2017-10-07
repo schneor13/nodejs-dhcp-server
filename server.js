@@ -6,9 +6,8 @@
  */
 
 
-let dhcp = require('dhcp');
-
-let dhcpServer = dhcp.createServer({
+const dhcp = require("dhcp");
+const dhcpServer = dhcp.createServer({
     // System settings
     range: [
         "192.168.3.10",
