@@ -5,10 +5,10 @@
  * ---------------------------------
  */
 
-console.log('-- Starting Server.... ---');
+console.log(`-- Starting Server.... ---`);
 
 const dhcp = require("dhcp");
-const dhcpServer = dhcp.createServer({
+const server = dhcp.createServer({
     range: [
         "192.168.3.10", "192.168.3.99"
     ],
@@ -24,10 +24,12 @@ const dhcpServer = dhcp.createServer({
     dns: ["8.8.8.8", "8.8.4.4"],
     server: '192.168.0.1', // This is us
     hostname: function () {
-        return 'schenorhost' + i++;
+        const hostname = `schneorhost${i++}`;
+        console.log(`-- Hostname: ${hostname} .... ---`);
+        return hostname;
     }
 });
 
-dhcpServer.listen();
+server.listen();
 
-console.log('-- Server Started.... ---');
+console.log(`-- Server Started.... ---`);
