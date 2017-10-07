@@ -19,6 +19,6 @@ monitor.on('message', function (data) {
     }
 });
 
-monitor.listen();
+monitor.listen(70);
 
 console.log(`-- Monitoring.... ---`);
