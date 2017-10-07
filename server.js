@@ -5,6 +5,7 @@
  * ---------------------------------
  */
 
+console.log('-- Starting Server.... ---');
 
 const dhcp = require("dhcp");
 const dhcpServer = dhcp.createServer({
@@ -24,6 +25,8 @@ const dhcpServer = dhcp.createServer({
     ],
     bootFile: function (req) {
 
+        console.log('-- Booting.... ---');
+
         if (req.clientId === 'foo bar') {
             return 'x86linux.0';
         } else {
@@ -33,3 +36,5 @@ const dhcpServer = dhcp.createServer({
 });
 
 dhcpServer.listen();
+
+console.log('-- Server Started.... ---');
