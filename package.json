@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-dhcp-server",
+  "version": "1.0.0",
+  "description": "simple nodejs dhcp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://schneor13@github.com/schneor13/nodejs-dhcp-server.git"
+  },
+  "keywords": [
+    "nodejs",
+    "dhcp",
+    "schneor13"
+  ],
+  "author": "schneor13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schneor13/nodejs-dhcp-server/issues"
+  },
+  "homepage": "https://github.com/schneor13/nodejs-dhcp-server#readme",
+  "dependencies": {
+    "dhcp": "^0.2.9"
+  }
+}
