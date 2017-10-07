@@ -2,9 +2,12 @@
   "name": "nodejs-dhcp-server",
   "version": "1.0.0",
   "description": "simple nodejs dhcp server",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start-server": "node server.js --harmony",
+    "start-client": "node client.js --harmony",
+    "start": "npm run start-server"
   },
   "repository": {
     "type": "git",
